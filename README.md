@@ -10,8 +10,11 @@ Methodology:
 1. Used h2 database itself for now.
 
 2. Database structure is as follows:
+
 TABLE CONNECTION_GROUP_ENTITY with COLUMNS (ID, CONNECTION_GROUP_NAME)
+
 TABLE NODE_ENTITY with COLUMNS (ID, NODE_NAME, CONNECTION_GROUP_ID)
+
 TABLE EDGES_ENTITY with COLUMNS (ID, TO_NODE_ID, FROM_NODE_ID, CONNECTION_GROUP_ID)
 
 Using the above tables, storing the graph.
