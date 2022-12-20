@@ -1,21 +1,21 @@
 # facets_cloud
 
-Brief Intro:
+**Brief Intro:**
 Have written SpringBoot app for creating connection groups, nodes, adding nodes to connection groups, adding edges between nodes, finding connection group using nodes name etc.
 Basic error handling is done due to time constraint.
 
 All the requirements mentioned in the doc are implemented(based on my understanding).
 
-Methodology:
+**Methodology:**
 1. Used h2 database itself for now.
 
 2. Database structure is as follows:
 
-TABLE CONNECTION_GROUP_ENTITY with COLUMNS (ID, CONNECTION_GROUP_NAME)
+TABLE **CONNECTION_GROUP_ENTITY** with COLUMNS (ID, CONNECTION_GROUP_NAME)
 
-TABLE NODE_ENTITY with COLUMNS (ID, NODE_NAME, CONNECTION_GROUP_ID)
+TABLE **NODE_ENTITY** with COLUMNS (ID, NODE_NAME, CONNECTION_GROUP_ID)
 
-TABLE EDGES_ENTITY with COLUMNS (ID, TO_NODE_ID, FROM_NODE_ID, CONNECTION_GROUP_ID)
+TABLE **EDGES_ENTITY** with COLUMNS (ID, TO_NODE_ID, FROM_NODE_ID, CONNECTION_GROUP_ID)
 
 Using the above tables, storing the graph.
 
@@ -29,7 +29,7 @@ Using this hashmaps, we avoid querying the database and helps in fast lookup.
 
 All the API names are self explanotory
 
-EndPoints to test: (via postman or curl etc.)
+**EndPoints to test: (via postman or curl etc.)**
 1. Listing all connection groups:
 GET http://localhost:8097/api/connectionGroups
 
